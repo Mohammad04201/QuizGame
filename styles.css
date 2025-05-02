@@ -1,0 +1,63 @@
+/* *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} */
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+   background-color: #f5f5f5;
+}
+.quiz{
+  max-width: 500px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(0,0,0,0.3);
+padding: 20px;
+}
+.options{
+    display: flex;
+    flex-wrap: wrap;
+    
+    margin-top: 20px;
+}
+.option {
+    width: 48%;
+    margin: 1%;
+    padding: 10px;
+    border: none;
+    background-color: #027A20; /* Changed to hex code for consistency */
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer; /* Added cursor pointer for better UX */
+    /* transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; Added transition for smooth hover effect */
+}
+
+.option:hover {
+    background-color: #0E802B; /* Changed to hex code for consistency */
+    /* transform: scale(1.05); Slightly enlarges the button */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+}
+
+#score{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    display: none;
+    margin-bottom:15px ;
+}
+/* Media Queries for Mobile Devices */
+@media (max-width: 600px) {
+    .quiz {
+        padding: 10px;
+    }
+    .option {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
